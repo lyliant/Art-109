@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="page-title"> Love Grows</h1>
+    </header>
+    <main>
+        <img src="images/img-0.gif" alt="" id="image">
+
+        <div id="question1" class="question"> 
+            <p>Do you want to plant seeds?</p>
+            <div>
+                <input type="radio" name="answer" value="yes" id="yes">
+                <label for="yes">yes</label>
+            </div>
+            <div>
+                <input type="radio" name="answer" value="no" id="no">
+                <label for="no">no</label>
+            </div>
+        </div>
+
+        <div id="no_plant" class="hidden question">
+            <p>What concerns do you have about planting?</p>
+            <div>
+                <input type="radio" name="plant_concern" value="time" id="no_time">
+                <label for="no_time">I’m too busy with other commitments.</label>
+            </div>
+            <div>
+                <input type="radio" name="plant_concern" value="fear" id="no_fear">
+                <label for="no_fear">I'm afraid I won't take care of it properly.</label>
+            </div>
+        </div>
+
+        <div id="question2" class="hidden question">
+            <p>Do you want to water the plant?</p>
+            <div>
+                <input type="radio" name="water" value="yes" id="water_yes">
+                <label for="water_yes">yes</label>
+            </div>
+            <div>
+                <input type="radio" name="water" value="no" id="water_no">
+                <label for="water_no">no</label>
+            </div>
+        </div>
+
+        <div id="no_water" class="hidden question">
+            <p>What makes you hesitant to water the plant?</p>
+            <div>
+                <input type="radio" name="water_concern" value="time" id="water_time">
+                <label for="water_time">I don’t have enough time.</label>
+            </div>
+            <div>
+                <input type="radio" name="water_concern" value="knowledge" id="water_knowledge">
+                <label for="water_knowledge">I’m not sure how to do it properly.</label>
+            </div>
+        </div>
+
+        <div id="question3" class="hidden question">
+            <p>Does the plant need sunlight?</p>
+            <div>
+                <input type="radio" name="sunlight" value="yes" id="sun_yes">
+                <label for="sun_yes">yes</label>
+            </div>
+            <div>
+                <input type="radio" name="sunlight" value="no" id="sun_no">
+                <label for="sun_no">no</label>
+            </div>
+        </div>
+
+        <div id="no_sun" class="hidden question">
+            <p>What are your thoughts on sunlight for the plant?</p>
+            <div>
+                <input type="radio" name="sun_concern" value="not_needed" id="sun_not_needed">
+                <label for="sun_not_needed">I think it doesn't need it.</label>
+            </div>
+            <div>
+                <input type="radio" name="sun_concern" value="too_much" id="sun_too_much">
+                <label for="sun_too_much">I’m worried about too much sunlight.</label>
+            </div>
+        </div>
+
+        <div id="question4" class="hidden question">
+            <p>Do you want to communicate with your plant?</p>
+            <div>
+                <input type="radio" name="communicate" value="yes" id="comm_yes">
+                <label for="comm_yes">yes</label>
+            </div>
+            <div>
+                <input type="radio" name="communicate" value="no" id="comm_no">
+                <label for="comm_no">no</label>
+            </div>
+        </div>
+
+        <div id="no_communicate" class="hidden question">
+            <p>What makes you feel that communication isn’t necessary?</p>
+            <div>
+                <input type="radio" name="comm_concern" value="fine_alone" id="comm_fine_alone">
+                <label for="comm_fine_alone">I think it will be fine on its own.</label>
+            </div>
+            <div>
+                <input type="radio" name="comm_concern" value="no_time" id="comm_no_time">
+                <label for="comm_no_time">I don’t have the time to communicate.</label>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
